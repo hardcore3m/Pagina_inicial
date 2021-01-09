@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Estudos</title>
+</head>
+
+<body>
+    <section id="contador-1">
+    <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <th colspan="4">Decola dev avanade</th>
+        </tr>
+        <tr style="text-align: center; margin: 3px 10px; font-weight: bolder; font-size: 20px;">
+            <td id="days"></td>
+            <td id="hours"></td>
+            <td id="minutes"></td>
+            <td id="seconds"></td>
+        </tr>
+        <tr>
+            <td>Dias</td>
+            <td>Horas</td>
+            <td>Minutos</td>
+            <td>Segundos</td>
+        </tr>
+    </table>
+    <script>
+        const daysContainer = document.querySelector('#days');
+        const hoursContainer = document.querySelector('#hours');
+        const minutesContainer = document.querySelector('#minutes');
+        const secondsContainer = document.querySelector('#seconds');
+        const spinnerLoading = document.querySelector('#loading');
+        const countDownContainer = document.querySelector('#countdown');
+
+        const nextBirthday = new Date().getFullYear();
+        const newBirthdayTime = new Date(`January 11 ${nextBirthday} 23:59:59`);
+
+        const getTimeUnit = unit => unit < 10 ? '0' + unit : unit;
+
+        const insertCountdownValues = ({ days, hours, minutes, seconds }) => {
+            secondsContainer.textContent = getTimeUnit(seconds);
+            daysContainer.textContent = getTimeUnit(days);
+            hoursContainer.textContent = getTimeUnit(hours);
+            minutesContainer.textContent = getTimeUnit(minutes);
+        }
+
+        const updateCountdown = () => {
+            const currentTime = new Date();
+            const difference = newBirthdayTime - currentTime;
+            const days = Math.floor(difference / 1000 / 60 / 60 / 24);
+            const hours = Math.floor(difference / 1000 / 60 / 60) % 24;
+            const minutes = Math.floor(difference / 1000 / 60) % 60;
+            const seconds = Math.floor(difference / 1000) % 60;
+
+            insertCountdownValues({ days, hours, minutes, seconds });
+        }
+
+
+        const handleCountdownDisplay = () => {
+            spinnerLoading.remove()
+            countDownContainer.style.display = 'flex';
+        }
+        setTimeout(handleCountdownDisplay, 1000);
+        setInterval(updateCountdown, 1000);
+    </script>
+    
+</body>
+
+</html>

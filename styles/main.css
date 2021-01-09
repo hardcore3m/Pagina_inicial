@@ -1,0 +1,114 @@
+:root{
+    --vermelho: #E50914;
+    --preto:rgba(0, 0, 0, 0.849);
+    --verde: #24c01f;
+    --branco:#f3f3f3;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header .cabecalho{
+    background-color: rgba(0, 0, 0, 0.849);
+    border: solid 2px var(--verde);
+    padding: 20px;
+    border-radius: 25px;
+    margin:10px 30px;
+    color: var(--branco);
+    height: 100px;
+    vertical-align: middle;
+
+}
+.nav form{
+    margin: 0 auto;
+width: 70%;
+align-self: center;
+}
+
+.banner{
+    display: inline;
+    flex-direction: row;
+    padding-left: 15px;
+    font-size: 20pt;
+    font-family: 'Dancing Script', cursive;
+}
+
+.botao{
+    background-color: var(--preto);
+    color: var(--branco);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    width: 15%;
+    margin-top: 10px;
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: var(--branco);
+    color: var(--verde);
+    }
+.container{
+    visibility: hidden;
+}
+.conteudo{
+    background-color: var(--preto);
+    color: var(--branco);
+    margin:20px 50px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 600px;
+    align-content: center;
+
+}
+/*Modelo Três Colunas*/
+.colunas-3{
+    float: left;
+    padding: 5px;
+    margin:0px 3px;
+    width: 32%;
+    text-align: center;
+
+}
+.colunas-3 summary{
+    text-align: center;
+    transition: .3s ease all;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.colunas-3 summary:hover{
+    cursor: pointer;
+    background-color: var(--branco);
+    color: var(--preto);
+
+}
+.colunas-3 summary::-webkit-details-marker {
+    display: none
+  }
+
+.colunas-3 p{
+    padding-top: 5px;
+    font-size: 16pt;
+}
+.colunas-3 a{
+    text-decoration: none;
+    color: var(--preto);
+}
+.separador{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+#dio{
+background-color: orange;
+color: var(--preto);
+}
+#estacio{
+    background-color: cornflowerblue;
+}
+.corpoDoConteudo{
+    clear: both;
+    padding:10px 0px;
+    text-align: center;
+}
