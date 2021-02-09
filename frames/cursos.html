@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Contador</title>
+</head>
+
+<body>
+    <style>
+        .separador {
+            background-color: #204051;
+            text-align: center;
+            color: white;
+        }
+
+        .titleCurso {
+            text-transform: uppercase;
+        }
+    </style>
+    <script>
+        document.write('<p class="separador"><b>Cursos</b></p>');
+        var cursos = [
+            {
+                data: '"february 12, 2021"',
+                curso: 'GFT START_UNI 2021 #1',
+            },
+            {
+                data: '"march 15, 2021"',
+                curso: 'Avanade Fullstack Developer',
+            },
+
+        ]
+
+        for (let i = 0; i < cursos.length; i++) {
+            var currentData = new Date();
+            var targetData = new Date(cursos[i].data);
+            const calculoPrazo = Math.abs(targetData - currentData);
+            var prazo = Math.ceil(calculoPrazo / (1000 * 60 * 60 * 24));
+
+
+
+            if (targetData >= currentData) {
+                document.write('<div>' + '<p class="titleCurso"><b>' + cursos[i].curso + '</b></p>' + '<p>' + Math.floor(prazo / 30) + ' Meses e ' + Math.floor(prazo % 30) + ' Dias</p></div>');
+            }
+        };
+
+    </script>
+    <script>
+        document.write('<p class="separador"><b>Inscrições</b></p>');
+        var inscricoes = [
+            {
+                data: '"february 20, 2021"',
+                curso: 'Impulso fullstack developer',
+            },
+            {
+                data: '"february 28, 2021"',
+                curso: 'Avanade Angular Developer',
+            },
+            {
+                data: '"march 03, 2021"',
+                curso: 'SPTech Desenvolvimento Front-End',
+            },
+            {
+                data: '"march 03, 2021"',
+                curso: '.net fundamentals',
+            },
+            {
+                data: '"march 03, 2021"',
+                curso: 'javascript game developer',
+            },
+            {
+                data: '"march 03, 2021"',
+                curso: 'Avanade angular developer',
+            },
+            {
+                data: '"march 02, 2021"',
+                curso: 'Inter Java Developer',
+            },
+            {
+                data: '"march 04, 2021"',
+                curso: 'localizalabs .net developer',
+            },
+            {
+                data: '"march 05, 2021"',
+                curso: 'mrv .net developer',
+            },
+        ]
+
+        for (let i = 0; i < inscricoes.length; i++) {
+            var currentData = new Date();
+            var targetData = new Date(inscricoes[i].data);
+            const calculoPrazo = Math.abs(targetData - currentData);
+            var prazo = Math.ceil(calculoPrazo / (1000 * 60 * 60 * 24));
+
+
+            if (targetData >= currentData) {
+                document.write('<div>' + '<p class="titleCurso"><b>' + inscricoes[i].curso + '</b></p>' + '<p>' + + Math.floor(prazo / 30) + ' Meses e ' + Math.floor(prazo % 30) + ' Dias</p></div>');
+            }
+        };
+
+    </script>
+</body>
+
+</html>
