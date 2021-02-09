@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <title>Nav</title>
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: Cinzel;
+            src: url(../fonts/Cinzel-VariableFont_wght.ttf);
+        }
+
+        @font-face {
+            font-family: Rajdhani;
+            src: url(../fonts/Rajdhani-Regular.ttf);
+        }
+
+        header {
+            display: inline-block;
+            background: linear-gradient(#3498db, #2c3e50);
+            color: #ddd;
+        }
+
+        img {
+            margin-right: 15px;
+        }
+
+        #brand {
+            width: 20%;
+            font-weight: bolder;
+            font-size: 20pt;
+
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav a {
+            border-right: #ddd solid 1px;
+            text-decoration: none;
+            font-family: Cinzel;
+            transition-delay: 0.3s;
+        }
+
+        .navImg {
+            border: none;
+            padding: 0px;
+        }
+
+        nav a:hover {
+            background: #3498db;
+            color: #eee;
+        }
+
+        nav img {
+            padding-left: 5px;
+            width: 25px;
+        }
+
+        a {
+            padding: 5px 10px;
+            font-weight: bolder;
+            color: #ddd;
+
+        }
+
+        #data {
+            margin-top: 15px;
+            background: #204051;
+            color: #cae8d5;
+            font-weight: bolder;
+            font-size: large;
+            padding: 2px;
+        }
+    </style>
+    <header class="navbar navbar-expand flex-column flex-md-row">
+        <img src="../img/sources_code.png" width="50px" alt="">
+        <a style="text-decoration: none; font-family: Rajdhani;" href="#" id="brand">Planejador Pessoal</a>
+        <nav>
+            <a style="text-decoration: none;" target="_top" href="../index.html">Início</button></a>
+            <a style="text-decoration: none;" target="_top" href="../estudos.html">Estudos</button></a>
+            <a style="text-decoration: none;" target="_top" href="../docs.html">Documentações</button></a>
+            <a style="text-decoration: none;" target="_top" href="../templates.html">Templates</button></a>
+            <a style="text-decoration: none;" target="_top" href="../magick.html">Magick</button></a>
+            <a style="text-decoration: none;" target="_top" href="../atalhos.html">Atalhos</button></a>
+            <a style="text-decoration: none;" target="_top" href="../outros.html"></button>Outros</a>
+            <a class="navImg" href="http://" target="_blank" rel="noopener noreferrer"><img
+                    src="../img/038-google-drive.png" alt="" onclick=""></a>
+            <a class="navImg" href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/039-github.png"
+                    alt="" onclick=""></a>
+            <a class="navImg" href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/002-twitter.png"
+                    alt="" onclick=""></a>
+            <a class="navImg" href="http://" target="_blank" rel="noopener noreferrer"><img src="../img/002-youtube.png"
+                    alt="" onclick=""></a>
+            <a class="navImg" href="http://" target="_blank" rel="noopener noreferrer"><img
+                    src="../img/010-linkedin.png" alt="" onclick=""></a>
+            <a class="navImg" href="http://" target="_blank" rel="noopener noreferrer"><img
+                    src="../img/034-instagram.png" alt="" onclick=""></a>
+        </nav>
+
+    </header>
+    <center>
+        <div id="data"></div>
+    </center>
+    <script src="../scripts/time.js"></script>
+</body>
+
+</html>

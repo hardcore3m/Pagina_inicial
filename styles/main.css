@@ -1,114 +1,183 @@
-:root{
+:root {
     --vermelho: #E50914;
-    --preto:rgba(0, 0, 0, 0.849);
-    --verde: #24c01f;
-    --branco:#f3f3f3;
+    --preto: rgba(0, 0, 0, 0.849);
+    --azul: #204051;
+    --verde: #84a9ac;
+    --branco: #f3f3f3;
+    --gradiente1: #20002c;
+    --gradiente2: #cbb4d4;
 }
-*{
+
+@font-face {
+    font-family: Cinzel;
+    src: url(../fonts/Cinzel-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Rajdhani;
+    src: url(../fonts/Rajdhani-Regular.ttf);
+}
+@font-face{
+    font-family: Lexend;
+    src:url(../fonts/LexendMega-Regular.ttf)
+}
+@font-face{
+    font-family: Orbitron;
+    src:url(../fonts/Orbitron-VariableFont_wght.ttf)
+}
+@font-face{
+    font-family: Saira;
+    src:url(../fonts/SairaCondensed-Regular.ttf)
+}
+
+.fundoAzul {
+    background-color: #84a9ac;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.fundoAzul h3 {
+    font-family: Rajdhani;
+    text-align: center;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+.fundoAzul a {
+    font-family: Lexend;
+    font-weight: bolder;
+    color: var(--preto);
+}
+
+.fundoAzul a:link {
+    text-decoration: none;
+}
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-header .cabecalho{
-    background-color: rgba(0, 0, 0, 0.849);
-    border: solid 2px var(--verde);
-    padding: 20px;
-    border-radius: 25px;
-    margin:10px 30px;
-    color: var(--branco);
-    height: 100px;
-    vertical-align: middle;
 
-}
-.nav form{
-    margin: 0 auto;
-width: 70%;
-align-self: center;
-}
+/*Submenu*/
 
-.banner{
-    display: inline;
-    flex-direction: row;
-    padding-left: 15px;
-    font-size: 20pt;
-    font-family: 'Dancing Script', cursive;
-}
-
-.botao{
-    background-color: var(--preto);
-    color: var(--branco);
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 4px;
-    width: 15%;
-    margin-top: 10px;
-    cursor:pointer;
-    transition: .3s ease all;
-}
-
-.botao:hover{
-    background-color: var(--branco);
-    color: var(--verde);
-    }
-.container{
-    visibility: hidden;
-}
-.conteudo{
-    background-color: var(--preto);
-    color: var(--branco);
-    margin:20px 50px;
-    padding: 10px;
-    border-radius: 5px;
-    height: 600px;
-    align-content: center;
-
-}
-/*Modelo Três Colunas*/
-.colunas-3{
-    float: left;
+.submenu {
     padding: 5px;
-    margin:0px 3px;
-    width: 32%;
+    margin: 0px 3px;
     text-align: center;
-
 }
-.colunas-3 summary{
+
+.submenu summary {
     text-align: center;
     transition: .3s ease all;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.colunas-3 summary:hover{
+
+.submenu summary:hover {
     cursor: pointer;
     background-color: var(--branco);
     color: var(--preto);
-
 }
-.colunas-3 summary::-webkit-details-marker {
-    display: none
-  }
 
-.colunas-3 p{
+.submenu summary::-webkit-details-marker {
+    display: none
+}
+
+.submenu p {
     padding-top: 5px;
     font-size: 16pt;
 }
-.colunas-3 a{
+
+.submenu a {
     text-decoration: none;
     color: var(--preto);
 }
-.separador{
-    background-color: var(--preto);
+
+.separador {
+    background-color: var(--azul);
+    text-align: center;
     color: var(--branco);
 }
-#dio{
-background-color: orange;
-color: var(--preto);
+
+#dio {
+    background-color: orange;
+    color: var(--preto);
 }
-#estacio{
+
+#estacio {
     background-color: cornflowerblue;
 }
-.corpoDoConteudo{
+
+.corpoDoConteudo {
     clear: both;
-    padding:10px 0px;
+    padding: 10px 0px;
     text-align: center;
+}
+
+table {
+    padding: 5px;
+}
+
+.tabhead {
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+.tabhead2 {
+    font-size: larger;
+    font-weight: bold;
+    color: #bbb;
+}
+
+.tabsection {
+    background: linear-gradient(#676767, #bbb);
+    height: 50px;
+    font-weight: bolder;
+    font-size: larger;
+    color: black;
+}
+
+.conteudo {
+    padding: 10px 60px;
+}
+
+.conteudo img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+/*submenu docs*/
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-top: 15px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }

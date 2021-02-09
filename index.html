@@ -5,112 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <title>Página Inicial</title>
 </head>
 
-<body onload="tempo()">
-    <header>
-        <div class="cabecalho">
-            <div class="banner" id="data"></div>
-            <div class="banner" id="hora"></div>
-            <div class="banner" id="regencia"></div>
-        </div>
-    </header>
-    <section>
-        <div class="nav">
-            <form>
-                <input class="botao" type="button" value="Estudos" onclick="selecionar('1');" />
-                <input class="botao" type="button" value="Documentações" onclick="selecionar('2');" />
-                <input class="botao" type="button" value="Templates" onclick="selecionar('3');" />
-                <input class="botao" type="button" value="Magick" onclick="selecionar('4');" />
-                <input class="botao" type="button" value="Atalhos" onclick="selecionar('5');" />
-                <input class="botao" type="button" value="Outros" onclick="selecionar('6');" />
-            </form>
-            <div id="botaoSelecionado"></div>
-        </div>
-    </section>
-    <section>
-        <div class="container" id="estudos">
-            <div class="conteudo">
-                <div class="colunas-3">
-                    <details id="dio">
-                        <summary>
-                            DIGITAL INNOVATION ONE
-                        </summary>
-                        <p><a href="https://web.digitalinnovation.one/labs" target="_blank">Labs</a></p>
-                        <p><a href="https://web.digitalinnovation.one/home" target="_blank">Página Inicial</a></p>
-                        <p><a href="https://web.digitalinnovation.one/tracks" target="_blank">Bootcamps</a></p>
-                        <hr>
-                        <p class="separador"><b>Bootcamps</b></p>
-                        <hr>
-                        <p><a href="https://web.digitalinnovation.one/track/decola-dev-avanade-2021 target="
-                                _blank">Decola dev avanade</a></p>
-                        <p><a href="https://web.digitalinnovation.one/track/gft-start_uni-2021-1" _blank">GFT Start
-                                Uni</a></p>
-                        <p><a href="https://web.digitalinnovation.one/track/net-fundamentals?">.NET Fundamentals</a></p>
-                        <p><a href=""></a></p>
-                    </details>
+<body>
+    <iframe src="frames/nav.html" frameborder="0" scrolling="0" style="width: 100%; height:auto;"></iframe>
 
-                </div>
-                <div class="colunas-3">
-                    <details id="estacio">
-                        <summary>
-                            DIGITAL INNOVATION ONE
-                        </summary>
-                        <p><a href="https://web.digitalinnovation.one/labs" target="_blank">Labs</a></p>
-                        <p><a href="https://web.digitalinnovation.one/home" target="_blank">Página Inicial</a></p>
-                        <p><a href="https://web.digitalinnovation.one/tracks" target="_blank">Bootcamps</a></p>
-                        <hr>
-                        <p class="separador"><b>Bootcamps</b></p>
-                        <hr>
-                        <p><a href="https://web.digitalinnovation.one/track/decola-dev-avanade-2021"
-                                target="_blank">Decola dev avanade</a></p>
-                        <p><a href="https://web.digitalinnovation.one/track/gft-start_uni-2021-1" target="_blank">GFT
-                                Start
-                                Uni</a></p>
-                        <p><a href="https://web.digitalinnovation.one/track/net-fundamentals?" target="_blank">.NET
-                                Fundamentals</a></p>
-                        <p><a href=""></a></p>
-                    </details>
-                </div>
-                <div class="colunas-3">Estudos</div>
-                <div class="corpoDoConteudo">
-                    INSERIR CONTAGENS REGRESSIVAS
-                </div>
-            </div>
-
-        </div>
-        <div class="container" id="docs">
-            <div class="conteudo">
-                Documentações
-            </div>
-        </div>
-        <div class="container" id="templates">
-            <div class="conteudo">
-                Templates
-            </div>
-        </div>
-        <div class="container" id="magick">
-            <div class="conteudo">
-                Magick
-            </div>
-        </div>
-        <div class="container" id="atalhos">
-            <div class="conteudo">
-                Atalhos
-            </div>
-        </div>
-        <div class="container" id="outros">
-            <div class="conteudo">
-                Outros
-            </div>
+    <section>
+        <div class="corpoDoConteudo">
+            
         </div>
     </section>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/time.js"></script>
 
 
 </body>

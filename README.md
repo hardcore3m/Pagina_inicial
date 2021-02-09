@@ -1,4 +1,8 @@
 # Nome do projeto
+Seja bem vindo!
+(!)ADVERTÊNCIA!
+Recomendo cautela caso você seja perfeccionista, ou tenha algum tipo de incômodo ou frustação em relação a projetos não finalizados. Essa é uma aplicaçao que não faz sentido ter uma versão final. Esse repositório é destinado a aplicação prática do meu aprendizado em desenvolvimento. Nada aqui é definitivo, e o que foi desenvolvido agora, em instantes pode não fazer mais sentindo diante de um aprofundamento ou conhecimento de um framework, linguagem ou método novo
+
 Desenvolvimento de uma aplicação para uma página inicial com funções, informações e atahos úteis no meu cotidiano para praticar desenvolvimento de Html, Css e javascript.
 
 ## Desenvolvimento

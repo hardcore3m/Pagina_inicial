@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Contador</title>
+</head>
+
+<body>
+    <style>
+h4{
+    padding-top: 2px;
+    padding-bottom:2px;
+
+}
+.separador {
+    background-color: #204051;
+    text-align: center;
+    color: white;
+}
+    </style>
+    <script>
+        document.write('<p class="separador"><b>Cursos</b></p>');
+        var cursos = [
+            {
+                data: '"february 12, 2021"',
+                curso: 'GFT START_UNI 2021 #1',
+            },
+            {
+                data: '"march 15, 2021"',
+                curso: 'Avanade Fullstack Developer',
+            },
+
+        ]
+
+        for (let i = 0; i < cursos.length; i++) {
+            var targetData = new Date(cursos[i].data);
+            var currentData = new Date();
+            var targetDay = new Date(cursos[i].data).getDate();
+            var currentDay = new Date().getDate();
+            var targetMonth = new Date(cursos[i].data).getMonth()
+            var currentMonth = new Date().getMonth();
+            var targetYear = new Date(cursos[i].data).getFullYear()
+            var currentYear = new Date().getFullYear();
+            var prazoDia = (targetDay - currentDay);
+            var prazoMes = (targetMonth - currentMonth);
+            var prazoAno = (targetYear - currentYear);
+            var _prazoDia = prazoDia;
+            var _prazoMes = prazoMes;
+            var _prazoAno = prazoAno;
+
+            if (targetData >= currentData) {
+                document.write('<div>' + '<p><b>' + cursos[i].curso + '</b></p>' +'<p>'+ prazoMes + ' Meses e ' + prazoDia + ' Dias</p></div> <hr>');
+            }
+        };
+        
+    </script>
+    <script>
+        document.write('<p class="separador"><b>Inscrições</b></p>');
+        var inscricoes = [
+            {
+                data: '"february 28, 2021"',
+                curso: 'Avanade Angular Developer',
+            },
+
+        ]
+
+        for (let i = 0; i < inscricoes.length; i++) {
+            var targetData = new Date(inscricoes[i].data);
+            var currentData = new Date();
+            var targetDay = new Date(inscricoes[i].data).getDate();
+            var currentDay = new Date().getDate();
+            var targetMonth = new Date(inscricoes[i].data).getMonth()
+            var currentMonth = new Date().getMonth();
+            var targetYear = new Date(inscricoes[i].data).getFullYear()
+            var currentYear = new Date().getFullYear();
+            var prazoDia = (targetDay - currentDay);
+            var prazoMes = (targetMonth - currentMonth);
+            var prazoAno = (targetYear - currentYear);
+            var _prazoDia = prazoDia;
+            var _prazoMes = prazoMes;
+            var _prazoAno = prazoAno;
+
+
+            if (targetData >= currentData) {
+                document.write('<div>' + '<p><b>' + inscricoes[i].curso +  '</b></p>' +'<p>' + prazoMes + ' Meses e ' + prazoDia + ' Dias</p>');
+            }
+        };
+
+    </script>
+</body>
+
+</html>
