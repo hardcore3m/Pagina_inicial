@@ -32,7 +32,58 @@
     font-family: Saira;
     src: url(../fonts/SairaCondensed-Regular.ttf)
 }
-
+@font-face {
+    font-family: Titan;
+    src: url(../fonts/Titan.otf)
+}
+@font-face {
+    font-family: Avengers;
+    src: url(../fonts/AVENGEANCE\ HEROIC\ AVENGER.otf)
+}
+@font-face {
+    font-family: NinjaSushi;
+    src: url(../fonts/NinjaSushi.ttf)
+}
+@font-face {
+    font-family: Romanus;
+    src: url(../fonts/ROMANUS.otf)
+}
+@font-face {
+    font-family: Nigel;
+    src: url(../fonts/The\ Nigel\ Font.ttf)
+}
+@font-face {
+    font-family: Khodijah;
+    src: url(../fonts/Khodijah\ Free.otf)
+}
+@font-face {
+    font-family: Kujang;
+    src: url(../fonts/Kujang-Regular.ttf)
+}
+@font-face {
+    font-family: Euskal;
+    src: url(../fonts/Neo\ Euskal\ Herria.otf)
+}
+@font-face {
+    font-family: Fortune;
+    src: url(../fonts/The\ Fortune.otf)
+}
+@font-face {
+    font-family: History;
+    src: url(../fonts/History\ Icons.otf)
+}
+@font-face {
+    font-family: Logos;
+    src: url(../fonts/font\ 120\ logos.ttf)
+}
+@font-face {
+    font-family: Icons;
+    src: url(../fonts/font\ icons\ 120.ttf)
+}
+@font-face {
+    font-family: Icons2;
+    src: url(../fonts/Icons\ 2019.ttf)
+}
 .fundoAzul {
     background-color: #84a9ac;
     border-radius: 5px;
@@ -185,8 +236,15 @@ table {
 .tabcontent h4 {
     font-family: Saira;
     font-size: 40px;
+    margin-bottom: 10px;
 }
+.tabcontent p{
+    text-align: justify;
+}
+.tabcontent table{
+    width:100%;
 
+}
 .docsDiv {
     width: 80%;
     margin: auto;
@@ -195,4 +253,36 @@ table {
 .docsDiv img {
     margin-left: 15px;
     width: 50px;
+}
+.fontsP{
+    font-size: 30px;
+}
+.wingdingsTr td{
+    font-size: 30px;
+}
+/*##############################################Exclusivo templates.html*/
+
+.tempDiv {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.tempHeader {
+    background-color: #204051;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    color: #ddd;
+    font-weight: bolder;
+    font-family: Cinzel;
+}
+
+.tempBody {
+    background-color: #3b6978;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+    color: #ddd;
+    text-align: center;
 }
