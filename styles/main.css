@@ -120,6 +120,24 @@
     box-sizing: border-box;
 }
 
+.fundoT {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.fundoT h3 {
+    font-family: Rajdhani;
+    text-align: center;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.fundoT a {
+    font-family: Lexend;
+    font-weight: bolder;
+    color: var(--preto);
+}
 /*Submenu*/
 
 .submenu {
@@ -199,7 +217,7 @@ table {
     max-height: 80px;
 }
 
-/*##############################################Exclusivo docs.html*/
+/*############################################## Exclusivo docs.html*/
 
 .tab {
     overflow: hidden;
@@ -260,11 +278,13 @@ table {
 .wingdingsTr td{
     font-size: 30px;
 }
-/*##############################################Exclusivo templates.html*/
+/*############################################## Exclusivo templates.html*/
 
 .tempDiv {
     float: left;
     margin-bottom: 20px;
+    margin-right: 20px;
+    width: 200px;
 }
 
 .tempHeader {
@@ -285,4 +305,10 @@ table {
     padding: 15px;
     color: #ddd;
     text-align: center;
+    height: 100px;
+    font-weight: bold;
+}
+.tempBody:hover{
+    background-color: #84a9ac;
+    color: #204051;
 }
