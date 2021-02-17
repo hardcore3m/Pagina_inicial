@@ -10,17 +10,212 @@
 </head>
 
 <body>
+    <style>
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+            margin: auto;
+            width: 65%;
+        }
+        .tablinks,
+        .tabcontent {
+            height: 320px;
+        }
+
+        .tabcontent {
+            width: 300px;
+        }
+
+        .tablinks {
+            width: 80px;
+        }
+
+        .tablinks p {
+            transform: rotate(-90deg);
+            display: table-cell;
+            padding-top: 50px;
+            padding-right: 10px;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-top: 15px;
+            padding-left: 15px;
+            font-size: 14pt;
+        }
+    </style>
     <iframe src="frames/nav.html" frameborder="0" scrolling="0" style="width: 100%; height:auto;"></iframe>
 
     <section>
+
         <div class="corpoDoConteudo">
-            
+            <section id="barraAtalhos">
+
+            </section>
+            <div class="flex">
+
+                <div style="background: #e60003; border-top-left-radius: 10px;border-bottom-left-radius: 10px;"
+                    class="tablinks" onclick="openDocs(event, 'dom')">
+                    <p>Domingo</p>
+                </div>
+                <div style="background: #e6000481;" id="dom" class="tabcontent">
+                    <ul>
+                        <li>Asseio Pessoal</li>
+                        <li>Mentalização</li>
+                        <li>Regar as plantas</li>
+                        <li>Leitura Diária</li>
+                        <li>Tai Chi</li>
+                        <li>Praticar Javascript</li>
+                        <li>Ligar para amigos</li>
+                        <li>Resumo do dia</li>
+                    </ul>
+                </div>
+                <div style="background: #e68500;" class="tablinks" onclick="openDocs(event, 'seg')">
+                    <p>Segunda</p>
+                </div>
+                <div style="background: #e6860081;" id="seg" class="tabcontent">
+                    <ul>
+                        <li>Asseio Pessoal</li>
+                        <li>Mentalização</li>
+                        <li>Regar as plantas</li>
+                        <li>Mandala Astrológica</li>
+                        <li>Corrida ou Spinning</li>
+                        <li>Digital Innovation One</li>
+                        <li>Arrumar Casa</li>
+                        <li>Praticar .Net</li>
+                        <li>Resumo do dia</li>
+                    </ul>
+                </div>
+                <div style="background: #e6e500;" class="tablinks" onclick="openDocs(event, 'ter')">
+                    <p>Terça</p>
+                </div>
+                <div style="background: #e6e60083;" id="ter" class="tabcontent">
+                    <ul>
+                        <li>Asseio Pessoal</li>
+                        <li>Mentalização</li>
+                        <li>Regar as plantas</li>
+                        <li>Retirar o Lixo</li>
+                        <li>Leitura Diária</li>
+                        <li>Exercícios</li>
+                        <li>Digital Innovatio One</li>
+                        <li>Lavar Banheiro</li>
+                        <li>Digital Innovation One</li>
+                        <li>Resumo do dia</li>
+                    </ul>
+                </div>
+                <div style="background: #00e644;" class="tablinks" onclick="openDocs(event, 'qua')">
+                    <p>Quarta</p>
+                </div>
+                <div style="background: #00e64583;" id="qua" class="tabcontent">
+                    <ul>
+                        <li>Asseio Pessoal</li>
+                        <li>Mentalização</li>
+                        <li>Regar as plantas</li>
+                        <li>Leitura Diária</li>
+                        <li>Exercícios</li>
+                        <li>Digital Innovation One</li>
+                        <li>Arrumar terraço e lavar roupas</li>
+                        <li>Praticar node.js</li>
+                        <li>Resumo do dia</li>
+                    </ul>
+                </div>
+                <div style="background: #008ce6;" class="tablinks" onclick="openDocs(event, 'qui')">
+                    <p>Quinta</p>
+                </div>
+                <div style="background: #008ee67c;" id="qui" class="tabcontent">
+                    <ul>
+                        <li>Asseio Pessoal</li>
+                        <li>Mentalização</li>
+                        <li>Regar as plantas</li>
+                        <li>Retirar o Lixo</li>
+                        <li>Leitura Diária</li>
+                        <li>Trabalho</li>
+                        <li>Resumo do dia</li>
+                    </ul>
+                </div>
+                <div style="background: #6600e6;" class="tablinks" onclick="openDocs(event, 'sex')">
+                    <p>Sexta</p>
+                </div>
+                <div style="background: #6800e67e;" id="sex" class="tabcontent">
+                    <ul>
+                        <li>Asseio Pessoal</li>
+                        <li>Mentalização</li>
+                        <li>Regar as plantas</li>
+                        <li>Leitura Diária</li>
+                        <li>Trabalho</li>
+                        <li>Resumo do dia</li>
+                    </ul>
+                </div>
+                <div style="background: #e000e6;border-top-right-radius: 10px;border-bottom-right-radius: 10px;"
+                    class="tablinks" onclick="openDocs(event, 'sab')">
+                    <p>Sábado</p>
+                </div>
+                <div style="background: #de00e652;border-top-right-radius: 10px;border-bottom-right-radius: 10px;"
+                    id="sab" class="tabcontent">
+                    <ul>
+                        <li>Asseio Pessoal</li>
+                        <li>Mentalização</li>
+                        <li>Regar as plantas</li>
+                        <li>Leitura Diária</li>
+                        <li>Trabalho</li>
+                        <li>Resumo do dia</li>
+                    </ul>
+                </div>
+
+
+            </div>
         </div>
     </section>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/time.js"></script>
+    <script>
+        function openDocs(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
 
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
 
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        }
+        window.onload = function () {
+
+            if (semanaHoje == 0) {
+                document.getElementById('dom').style.display = "block";
+            }
+            else if (semanaHoje == 1) {
+                document.getElementById('seg').style.display = "block";
+            }
+            if (semanaHoje == 2) {
+                document.getElementById('ter').style.display = "block";
+            }
+            if (semanaHoje == 3) {
+                document.getElementById('qua').style.display = "block";
+            }
+            if (semanaHoje == 4) {
+                document.getElementById('qui').style.display = "block";
+            }
+            if (semanaHoje == 5) {
+                document.getElementById('sex').style.display = "block";
+            }
+            if (semanaHoje == 6) {
+                document.getElementById('sab').style.display = "block";
+            }
+
+        };
+    </script>
 </body>
 
 </html>
