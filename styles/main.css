@@ -132,10 +132,37 @@
     margin-left: 15px;
     width: 50px;
 }
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+.faixa {
+    background-color: #333;
+    width: 100%;
+    font-family: Orbitron;
+    font-size: 12pt;
+}
+
+.faixa a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.faixa a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.faixa img {
+    padding-right: 15px;
+    width: 80px;
 }
 
 .fundoT {
@@ -239,18 +266,18 @@ table {
 
 /* ############################################# Banner */
 
-.navbar {
+.navMain {
     background-color: #333;
     width: 100%;
     font-family: Orbitron;
     font-size: 12pt;
 }
 
-.navbar img {
+.navMain img {
     width: 30px;
 }
 
-.navbar a {
+.navMain a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -259,7 +286,7 @@ table {
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navMain a:hover {
     background: #ddd;
     color: black;
 }
@@ -350,8 +377,6 @@ table {
 .tabcontent table {
     width: 100%;
 }
-
-
 
 .fontsP {
     font-size: 30px;
