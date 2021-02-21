@@ -32,66 +32,79 @@
     font-family: Saira;
     src: url(../fonts/SairaCondensed-Regular.ttf)
 }
+
 @font-face {
     font-family: Titan;
     src: url(../fonts/Titan.otf)
 }
+
 @font-face {
     font-family: Avengers;
     src: url(../fonts/AVENGEANCE\ HEROIC\ AVENGER.otf)
 }
+
 @font-face {
     font-family: NinjaSushi;
     src: url(../fonts/NinjaSushi.ttf)
 }
+
 @font-face {
     font-family: Romanus;
     src: url(../fonts/ROMANUS.otf)
 }
+
 @font-face {
     font-family: Nigel;
     src: url(../fonts/The\ Nigel\ Font.ttf)
 }
+
 @font-face {
     font-family: Khodijah;
     src: url(../fonts/Khodijah\ Free.otf)
 }
+
 @font-face {
     font-family: Kujang;
     src: url(../fonts/Kujang-Regular.ttf)
 }
+
 @font-face {
     font-family: Euskal;
     src: url(../fonts/Neo\ Euskal\ Herria.otf)
 }
+
 @font-face {
     font-family: Fortune;
     src: url(../fonts/The\ Fortune.otf)
 }
+
 @font-face {
     font-family: History;
     src: url(../fonts/History\ Icons.otf)
 }
+
 @font-face {
     font-family: Logos;
     src: url(../fonts/font\ 120\ logos.ttf)
 }
+
 @font-face {
     font-family: Icons;
     src: url(../fonts/font\ icons\ 120.ttf)
 }
+
 @font-face {
     font-family: Icons2;
     src: url(../fonts/Icons\ 2019.ttf)
 }
-.fundoAzul {
-    background-color: #84a9ac;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
+
+.container {
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 20px;
 }
 
-.fundoAzul h3 {
+.container h3 {
     font-family: Rajdhani;
     text-align: center;
     padding-bottom: 5px;
@@ -99,21 +112,26 @@
     text-transform: uppercase;
 }
 
-.fundoAzul a {
+.container a {
     font-family: Lexend;
     font-weight: bolder;
-    color: var(--preto);
+    color: #333;
 }
 
-.fundoAzul a:link {
+.container a:link {
     text-decoration: none;
+    color: #333;
 }
 
-.fundoAzul a:hover {
+.container a:hover {
     background: linear-gradient(#204051, #3b6978);
     color: #cae8d5;
 }
 
+.container img {
+    margin-left: 15px;
+    width: 50px;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -133,11 +151,13 @@
     text-decoration: underline;
     text-transform: uppercase;
 }
+
 .fundoT a {
     font-family: Lexend;
     font-weight: bolder;
     color: var(--preto);
 }
+
 /*Submenu*/
 
 .submenu {
@@ -217,6 +237,72 @@ table {
     max-height: 80px;
 }
 
+/* ############################################# Banner */
+
+.navbar {
+    background-color: #333;
+    width: 100%;
+    font-family: Orbitron;
+    font-size: 12pt;
+}
+
+.navbar img {
+    width: 30px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+#data {
+    color: white;
+}
+
+/* ############################################# Barra Lateral */
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 12em;
+    margin-top: -10.9em;
+    background-color: #444;
+    font-size: 16pt;
+    padding-left: 20px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    color: white;
+    font-family: Orbitron;
+    padding-bottom: 15px;
+    z-index: 1;
+}
+
+.menu img {
+    padding-left: 25px;
+}
+
+.menu a:link, a:visited {
+    color: white;
+}
+
+.menu a:hover {
+    color: white;
+}
+
 /*############################################## Exclusivo docs.html*/
 
 .tab {
@@ -256,28 +342,25 @@ table {
     font-size: 40px;
     margin-bottom: 10px;
 }
-.tabcontent p{
+
+.tabcontent p {
     text-align: justify;
 }
-.tabcontent table{
-    width:100%;
 
-}
-.docsDiv {
-    width: 80%;
-    margin: auto;
+.tabcontent table {
+    width: 100%;
 }
 
-.docsDiv img {
-    margin-left: 15px;
-    width: 50px;
-}
-.fontsP{
+
+
+.fontsP {
     font-size: 30px;
 }
-.wingdingsTr td{
+
+.wingdingsTr td {
     font-size: 30px;
 }
+
 /*############################################## Exclusivo templates.html*/
 
 .tempDiv {
@@ -308,7 +391,8 @@ table {
     height: 100px;
     font-weight: bold;
 }
-.tempBody:hover{
+
+.tempBody:hover {
     background-color: #84a9ac;
     color: #204051;
 }

@@ -11,850 +11,1030 @@
 </head>
 
 <body>
-    <iframe src="frames/nav.html" frameborder="0" scrolling="0" style="width: 100%; height:auto;"></iframe>
+    <header>
+        <div class="navbar">
+            <a href="#Devdocs"><img src="img/devdocs.png" alt="Devdocs IO"></a>
+            <a href="#github"><img src="img/039-github.png" alt="Github"></a>
+
+            <a href="https://trello.com/hardcore3m/boards"><img src="img/trello-mark-circle.png" alt="Trello"></a>
+            <a href="https://twitter.com/"><img src="img/013-twitter-1.png" alt="Twitter"></a>
+            <a href="https://br.linkedin.com/"><img src="img/031-linkedin.png" alt="linkedin"></a>
+            <a href="https://drive.google.com/drive/my-drive"><img src="img/038-google-drive.png" alt=""></a>
+            <a href="https://instagram.com/"><img src="img/034-instagram.png" alt=""></a>
+            <a href="#Fonts">Fontes</a>
+        </div>
+
+        <div class="menu">
+            <img src="img/planejador_pessoal.png" alt="" width="180"><br>
+            <a href="index.html">Início</a><br>
+            <a href="estudos.html">Estudos</a><br>
+            <a href="#" style="padding-left: 10px;">Documentações</a><br>
+            <a href="templates.html">Templates</a><br>
+            <a href="magick.html">Magick</a><br>
+            <a href="atalhos.html">Atalhos</a><br>
+            <a href="outros.html">Outros</a>
+        </div>
+    </header>
     <center>
-        <div class="conteudo fundoAzul docsDiv">
+        <div class="conteudo docsDiv container">
 
             <h3>Documentações e comandos</h3>
-
-            <div class="navbar navbar-expand flex-column flex-md-row justify-content-center">
-                <a href="https://devdocs.io/" target="_blank" rel="noopener noreferrer"><img src="img/devdocs.png"
-                        alt=""></a><br>
-
-                <a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer"><img
-                        src="img/html5.png" alt=""></a><br>
-
-                <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener noreferrer">
-                    <img src="img/css.png" alt=""></a><br>
-
-                <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank"
-                    rel="noopener noreferrer">
-                    <img src="img/bootstrap.png" alt=""></a><br>
-
-                <a href="https://www.w3schools.com/howto/default.asp" target="_blank" rel="noopener noreferrer">
-                    <img src="img/w3schools.png" alt=""></a><br>
-
-                <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener noreferrer"><img
-                        src="img/javascript.png" alt=""></a>
-
-
-            </div>
-
-            <div class="tab">
-                <button class="tablinks" onclick="openDocs(event, 'Ubuntu')">Ubuntu</button>
-                <button class="tablinks" onclick="openDocs(event, 'Terminal')">Terminal</button>
-                <button class="tablinks" onclick="openDocs(event, 'Github')">Github</button>
-                <button class="tablinks" onclick="openDocs(event, 'Html')">Html</button>
-                <button class="tablinks" onclick="openDocs(event, 'Javascript')">Javascript</button>
-                <button class="tablinks" onclick="openDocs(event, 'Css')">Css</button>
-                <button class="tablinks" onclick="openDocs(event, 'Fonts')">Fontes</button>
-            </div>
-
-
-            <div id="Ubuntu" class="tabcontent">
-                <h4>Ubuntu</h4>
-                <p>Ubuntu is the capital city of England.</p>
-            </div>
-
-            <div id="Terminal" class="tabcontent">
-                <h4>Terminal</h4>
-                <p>Terminal is the capital of France.</p>
-            </div>
-
-            <div id="Github" class="tabcontent">
-                <h4>Github</h4>
-                <p>Github is the capital of Japan.</p>
-            </div>
-            <div id="Html" class="tabcontent">
-                <h4>Html</h4>
-                <h2>Some Useful HTML Character Entities</h2>
-                <table class="notranslate">
-                    <tr>
-                        <th>Result</th>
-                        <th>Description</th>
-                        <th>Entity Name</th>
-                        <th>Entity Number</th>
-                    </tr>
-                    <tr>
-                        <td style="height: 29px"></td>
-                        <td style="height: 29px">non-breaking space</td>
-                        <td style="height: 29px">&amp;nbsp;</td>
-                        <td style="height: 29px">&amp;#160;</td>
-                    </tr>
-                    <tr>
-                        <td>&lt;</td>
-                        <td>less than</td>
-                        <td>&amp;lt;</td>
-                        <td>&amp;#60;</td>
-                    </tr>
-                    <tr>
-                        <td>&gt;</td>
-                        <td>greater than</td>
-                        <td>&amp;gt;</td>
-                        <td>&amp;#62;</td>
-                    </tr>
-                    <tr>
-                        <td>&amp;</td>
-                        <td>ampersand</td>
-                        <td>&amp;amp;</td>
-                        <td>&amp;#38;</td>
-                    </tr>
-                    <tr>
-                        <td>&quot;</td>
-                        <td>double quotation mark </td>
-                        <td>&amp;quot;</td>
-                        <td>&amp;#34;</td>
-                    </tr>
-                    <tr>
-                        <td>&apos;</td>
-                        <td>single quotation mark (apostrophe) </td>
-                        <td>&amp;apos;</td>
-                        <td>&amp;#39;</td>
-                    </tr>
-                    <tr>
-                        <td>&cent;</td>
-                        <td>cent</td>
-                        <td>&amp;cent;</td>
-                        <td>&amp;#162;</td>
-                    </tr>
-                    <tr>
-                        <td>&pound;</td>
-                        <td>pound</td>
-                        <td>&amp;pound;</td>
-                        <td>&amp;#163;</td>
-                    </tr>
-                    <tr>
-                        <td>&yen;</td>
-                        <td>yen</td>
-                        <td>&amp;yen;</td>
-                        <td>&amp;#165;</td>
-                    </tr>
-                    <tr>
-                        <td>&euro;</td>
-                        <td>euro</td>
-                        <td>&amp;euro;</td>
-                        <td>&amp;#8364;</td>
-                    </tr>
-                    <tr>
-                        <td>&copy;</td>
-                        <td>copyright</td>
-                        <td>&amp;copy;</td>
-                        <td>&amp;#169;</td>
-                    </tr>
-                    <tr>
-                        <td>&#174;</td>
-                        <td>registered trademark</td>
-                        <td>&amp;reg;</td>
-                        <td>&amp;#174;</td>
-                    </tr>
-                </table>
-            </div>
-            <div id="Javascript" class="tabcontent">
-                <h4>Javascript</h4>
-                <h5>FontsAwesome</h5>
-                <p>&lt;script src="https://kit.fontawesome.com/017c99f6b4.js" crossorigin="anonymous"&gt;&lt;/script&gt;
-                </p>
-            </div>
-            <div id="Css" class="tabcontent">
-                <h4>Css</h4>
-                <p>Css is the capital of South Sudhan</p>
-            </div>
-            <div id="Fonts" class="tabcontent">
-                <h4>Fontes</h4>
-                <p class="fontsP" style="font-family: Cinzel;">Cinzel</p>
-                <p>
-                    @font-face {
-                    font-family: Cinzel;
-                    src: url(../fonts/Cinzel-VariableFont_wght.ttf);
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Rajdhani;">Rajdhani</p>
-                <p>
-                    @font-face {
-                    font-family: Rajdhani;
-                    src: url(../fonts/Rajdhani-Regular.ttf);
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Lexend;">Lexend</p>
-                <p>
-                    @font-face{
-                    font-family: Lexend;
-                    src:url(../fonts/LexendMega-Regular.ttf)
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Orbitron;">Orbitron</p>
-                <p>
-                    @font-face{
-                    font-family: Orbitron;
-                    src:url(../fonts/Orbitron-VariableFont_wght.ttf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Saira;">Saira</p>
-                <p>
-                    @font-face{
-                    font-family: Saira;
-                    src:url(../fonts/SairaCondensed-Regular.ttf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Titan;">Titan</p>
-                <p>
-                    @font-face {
-                    font-family: Titan;
-                    src: url(../fonts/Titan.otf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Avengers;">Avengers</p>
-                <p>
-                    @font-face {
-                    font-family: Avengers;
-                    src: url(../fonts/AVENGEANCE\ HEROIC\ AVENGER.otf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: NinjaSushi;">Ninja Sushi</p>
-                <p>
-                    @font-face {
-                    font-family: NinjaSushi;
-                    src: url(../fonts/NinjaSushi.ttf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Romanus;">Romanus</p>
-                <p>
-                    @font-face {
-                    font-family: Romanus;
-                    src: url(../fonts/ROMANUS.otf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Nigel;">Nigel</p>
-                <p>
-                    @font-face {
-                    font-family: Nigel;
-                    src: url(../fonts/The\ Nigel\ Font.ttf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Khodijah;">Khodijah</p>
-                <p>
-                    @font-face {
-                    font-family: Khodijah;
-                    src: url(../fonts/Khodijah\ Free.otf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Kujang;">Kujang</p>
-                <p>
-                    @font-face {
-                    font-family: Kujang;
-                    src: url(../fonts/Kujang-Regular.ttf)
-                    }
-                </p>
-                <hr>
-                <p class="fontsP" style="font-family: Euskal;">Euskal</p>
-                <p>
-                    @font-face {
-                    font-family: Euskal;
-                    src: url(../fonts/Neo\ Euskal\ Herria.otf)
-                    }
-                </p>
-                <div>
-                    <h4>Wingdings</h4>
-                    <table class="wingdings">
-                        <tr>
-                            <th colspan="26">Fortune</th>
-                        </tr>
-                        <tr class="wingdingsTr">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="font-family: Fortune;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase; font-family: Fortune;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr>
-                            <td colspan="26">@font-face {font-family: Fortune;src: url(../fonts/The\ Fortune.otf)}
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="wingdings">
-                        <tr>
-                            <th colspan="26">History</th>
-                        </tr>
-                        <tr class="wingdingsTr">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="font-family:History;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase; font-family: History;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr>
-                            <td colspan="26">@font-face {font-family: History;src: url(../fonts/History\ Icons.otf)}
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="wingdings">
-                        <tr>
-                            <th colspan="26">Icons</th>
-                        </tr>
-                        <tr class="wingdingsTr">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="font-family:Icons;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase; font-family: Icons;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr>
-                            <td colspan="26">@font-face {font-family: Icons;src: url(../fonts/font\ icons\ 120.ttf)}
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="wingdingsTr" class="wingdings">
-                        <tr>
-                            <th colspan="26">Logos</th>
-                        </tr>
-                        <tr>
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="font-family:Logos;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase; font-family: Logos;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr>
-                            <td colspan="26"> @font-face {font-family: Logos;src: url(../fonts/ 120\ logos.ttf)}
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="wingdings">
-                        <tr>
-                            <th colspan="26">Icons2</th>
-                        </tr>
-                        <tr class="wingdingsTr">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="font-family:Icons2;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr class="wingdingsTr" style="text-transform: uppercase; font-family: Icons2;">
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                            <td>d</td>
-                            <td>e</td>
-                            <td>f</td>
-                            <td>g</td>
-                            <td>h</td>
-                            <td>i</td>
-                            <td>j</td>
-                            <td>k</td>
-                            <td>l</td>
-                            <td>m</td>
-                            <td>n</td>
-                            <td>o</td>
-                            <td>p</td>
-                            <td>q</td>
-                            <td>s</td>
-                            <td>t</td>
-                            <td>u</td>
-                            <td>v</td>
-                            <td>w</td>
-                            <td>x</td>
-                            <td>y</td>
-                            <td>z</td>
-                        </tr>
-                        <tr>
-                            <td colspan="26">@font-face {font-family: Icons2;src: url(../fonts/Icons\ 2019.ttf)}
-                            </td>
-                        </tr>
-                    </table>
-                    <hr>
-                </div>
-            </div>
-        </div>
     </center>
+    </div>
+    <div id="Devdocs" class="navbar navbar-expand flex-column flex-md-row">
+        <a href="https://devdocs.io/" target="_blank" rel="noopener noreferrer"><img src="img/devdocs.png" alt="">
+            Devdocs IO</a>
+    </div>
+    <div class="container">
+        <p>Plataforma de documentações, possui inúmeras verões das documentações mais utilizadas.</p>
+        <a href="#">Voltar ao topo</a>
+    </div>
+
+    <div id="Ubuntu" class="navbar navbar-expand flex-column flex-md-row">
+        <a href="https://help.ubuntu.com/lts/ubuntu-help/index.html" target="_blank" rel="noopener noreferrer"><img
+                src="img/cof_orange_hex .jpg" alt="">
+            Ubuntu</a>
+    </div>
+    <div class="container">
+        <p>Principais comandos e atalhos utilizados no Linux</p>
+        <table class="table">
+            <tr>
+                <th>Atalhos</th>
+                <th>Função</th>
+            </tr>
+            <tr>
+                <td>Ctrl + Shift + T</td>
+                <td>Abrir nova aba no terminal atual</td>
+            </tr>
+            <tr>
+                <td>Ctrl + Shift + W</td>
+                <td>Feche a aba atual</td>
+            </tr>
+            <tr>
+                <td>Ctrl + A</td>
+                <td>Mover o cursor para o início da linha</td>
+            </tr>
+            <tr>
+                <td>Ctrl + E</td>
+                <td>Mover o cursor para o final da linha</td>
+            </tr>
+            <tr>
+                <td>Ctrl + U</td>
+                <td>Limpa toda a linha atual</td>
+            </tr>
+            <tr>
+                <td>Ctrl + K</td>
+                <td>Limpa o comando do cursor para a direita</td>
+            </tr>
+            <tr>
+                <td>Ctrl + W</td>
+                <td>Excluir a palavra antes do cursor</td>
+            </tr>
+            <tr>
+                <td>Ctrl + R</td>
+                <td>Permite que você pesquise seu histórico por comandos que correspondam ao que você digitou</td>
+            </tr>
+            <tr>
+                <td>Ctrl + C</td>
+                <td>Copia o processo atual</td>
+            </tr>
+            <tr>
+                <td>Ctrl + Z</td>
+                <td>Suspenda o processo atual enviando o sinal SIGSTOP</td>
+            </tr>
+            <tr>
+                <td>Ctrl + L</td>
+                <td>Limpa a saída do terminal</td>
+            </tr>
+            <tr>
+                <td>Alt + F</td>
+                <td>Avançar uma palavra</td>
+            </tr>
+            <tr>
+                <td>Alt + B</td>
+                <td>Retroceder uma palavra</td>
+            </tr>
+            <tr>
+                <td>Ctrl + Shift + C</td>
+                <td>Copie o comando destacado para a área de transferência</td>
+            </tr>
+            <tr>
+                <td>Ctrl + Shift + V ou Shift + Insert</td>
+                <td>Cole o conteúdo da área de transferência</td>
+            </tr>
+            <tr>
+                <td>Teclas de seta para cima / baixo</td>
+                <td>Para percorrer o histórico de comandos, permitindo que você execute rapidamente o mesmo comando
+                    várias vezes</td>
+            </tr>
+            <tr>
+                <td>ABA</td>
+                <td>Usado para completar o comando que você está digitando. Se mais de um comando for possível, você
+                    pode pressioná-lo várias vezes para percorrer as conclusões possíveis. Se um número muito grande de
+                    comandos for possível, ele pode exibir uma lista de todas as conclusões possíveis.</td>
+            </tr>
+        </table>
+        <a href="#">Voltar ao topo</a>
+        <table class="table">
+            <thead>
+                <td colspan="2"><h4>Principais Comandos</h4></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">sudo -i</td>
+                    <td>Inicia o modo administrador</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">sudo apt-get ugdate</td>
+                    <td>Esse comando atualiza o banco de dados e informa ao seu sistema se h&aacute; pacotes mais novos
+                        dispon&iacute;veis ou n&atilde;o.Para atualizar todos os pacotes com atualiza&ccedil;&otilde;es
+                        dispon&iacute;veis, voc&ecirc; pode usar este comando.</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">sudo apt-get upgrade</td>
+                    <td>Para atualizar todos os pacotes com atualiza&ccedil;&otilde;es dispon&iacute;veis, voc&ecirc;
+                        pode usar este comando.</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">ls</td>
+                    <td>O comando ls (list) lista todos os arquivos e pastas em seu diret&oacute;rio de trabalho
+                        atual.Esse comando atualiza o banco de dados e informa ao seu sistema se h&aacute; pacotes mais
+                        novos dispon&iacute;veis ou n&atilde;o.Para atualizar todos os pacotes com
+                        atualiza&ccedil;&otilde;es dispon&iacute;veis, voc&ecirc; pode usar este comando.</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">cd</td>
+                    <td>Voc&ecirc; pode usar caminhos completos para pastas ou simplesmente o nome de uma pasta dentro
+                        do diret&oacute;rio em que voc&ecirc; est&aacute; trabalhando atualmente. Alguns usos comuns
+                        s&atilde;o:<br /><br />cd / - Leva voc&ecirc; ao diret&oacute;rio raiz.<br />cd .. - Leva
+                        voc&ecirc; at&eacute; um n&iacute;vel de diret&oacute;rio.<br />cd - - Leva voc&ecirc; ao
+                        diret&oacute;rio anterior.</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">pwd </td>
+                    <td>
+                        <p>O comando pwd (print working directory) exibe o caminho completo do diret&oacute;rio de
+                            trabalho atual.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">history</td>
+                    <td>&nbsp;O comando history exibe todos os seus comandos anteriores, at&eacute; o limite do
+                        hist&oacute;rico.<br /><br /></td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">df -m</td>
+                    <td>&nbsp;O comando df (display filesystem) exibe informa&ccedil;&otilde;es sobre o uso do
+                        espa&ccedil;o em disco de todos os sistemas de arquivos montados.</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">&nbsp;du</td>
+                    <td>&nbsp;O comando df (display filesystem) exibe informa&ccedil;&otilde;es sobre o uso do
+                        espa&ccedil;o em um diret&oacute;rio</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">&nbsp;free</td>
+                    <td>Exibe a quantidade de espa&ccedil;o livre dispon&iacute;vel no sistema</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">&nbsp;uname -a</td>
+                    <td>Fornece informa&ccedil;&otilde;es sobre o sistema</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">man intro</td>
+                    <td>Breve introdu&ccedil;&atilde;o aos comandos do linux</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">&nbsp;touch</td>
+                    <td>Cria ariquivos em branco</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">locate -i</td>
+                    <td>para localizar arquivos</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">find</td>
+                    <td>Busca arquivos em diret&oacute;rios espec&iacute;ficos</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">echo</td>
+                    <td>Este comando &eacute; usado para mover alguns dados para um arquivo. Por exemplo, se voc&ecirc;
+                        quiser adicionar o texto &ldquo;Ol&aacute;, meu nome &eacute; John&rdquo; em um arquivo chamado
+                        name.txt, digite echo Ol&aacute;, meu nome &eacute; John &gt;&gt; name.txt</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">zip,unzip</td>
+                    <td>Use o comando zip para compactar seus arquivos em um arquivo zip e use o comando unzip para
+                        extrair arquivos descompactados de um arquivo zip. </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bolder; width: 200px">hostname</td>
+                    <td>Se voc&ecirc; quiser saber o nome do seu host/network (da sua rede), basta digitar hostname. E
+                        se adicionar -I ao final, exibir&aacute; o endere&ccedil;o IP da sua rede.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div id="Github" class="navbar navbar-expand flex-column flex-md-row">
+        <a href="https://help.ubuntu.com/lts/ubuntu-help/index.html" target="_blank" rel="noopener noreferrer"><img
+                src="img/039-github.png .jpg" alt="">
+            Github</a>
+    </div>   
+    <div class="container">
+        <h4>Github</h4>
+        <p>Github is the capital of Japan.</p>
+    </div>
+    <div id="Html" class="container">
+        <h4>Html</h4>
+        <h2>Some Useful HTML Character Entities</h2>
+        <table class="notranslate">
+            <tr>
+                <th>Result</th>
+                <th>Description</th>
+                <th>Entity Name</th>
+                <th>Entity Number</th>
+            </tr>
+            <tr>
+                <td style="height: 29px"></td>
+                <td style="height: 29px">non-breaking space</td>
+                <td style="height: 29px">&amp;nbsp;</td>
+                <td style="height: 29px">&amp;#160;</td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>less than</td>
+                <td>&amp;lt;</td>
+                <td>&amp;#60;</td>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>greater than</td>
+                <td>&amp;gt;</td>
+                <td>&amp;#62;</td>
+            </tr>
+            <tr>
+                <td>&amp;</td>
+                <td>ampersand</td>
+                <td>&amp;amp;</td>
+                <td>&amp;#38;</td>
+            </tr>
+            <tr>
+                <td>&quot;</td>
+                <td>double quotation mark </td>
+                <td>&amp;quot;</td>
+                <td>&amp;#34;</td>
+            </tr>
+            <tr>
+                <td>&apos;</td>
+                <td>single quotation mark (apostrophe) </td>
+                <td>&amp;apos;</td>
+                <td>&amp;#39;</td>
+            </tr>
+            <tr>
+                <td>&cent;</td>
+                <td>cent</td>
+                <td>&amp;cent;</td>
+                <td>&amp;#162;</td>
+            </tr>
+            <tr>
+                <td>&pound;</td>
+                <td>pound</td>
+                <td>&amp;pound;</td>
+                <td>&amp;#163;</td>
+            </tr>
+            <tr>
+                <td>&yen;</td>
+                <td>yen</td>
+                <td>&amp;yen;</td>
+                <td>&amp;#165;</td>
+            </tr>
+            <tr>
+                <td>&euro;</td>
+                <td>euro</td>
+                <td>&amp;euro;</td>
+                <td>&amp;#8364;</td>
+            </tr>
+            <tr>
+                <td>&copy;</td>
+                <td>copyright</td>
+                <td>&amp;copy;</td>
+                <td>&amp;#169;</td>
+            </tr>
+            <tr>
+                <td>&#174;</td>
+                <td>registered trademark</td>
+                <td>&amp;reg;</td>
+                <td>&amp;#174;</td>
+            </tr>
+        </table>
+    </div>
+    <div id="Javascript" class="container">
+        <h4>Javascript</h4>
+        <h5>FontsAwesome</h5>
+        <p>&lt;script src="https://kit.fontawesome.com/017c99f6b4.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+        </p>
+    </div>
+    <div id="Css" class="container">
+        <h4>Css</h4>
+        <p>Css is the capital of South Sudhan</p>
+    </div>
+    <div id="Fonts" class="container">
+        <h4>Fontes</h4>
+        <p class="fontsP" style="font-family: Cinzel;">Cinzel</p>
+        <p>
+            @font-face {
+            font-family: Cinzel;
+            src: url(../fonts/Cinzel-VariableFont_wght.ttf);
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Rajdhani;">Rajdhani</p>
+        <p>
+            @font-face {
+            font-family: Rajdhani;
+            src: url(../fonts/Rajdhani-Regular.ttf);
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Lexend;">Lexend</p>
+        <p>
+            @font-face{
+            font-family: Lexend;
+            src:url(../fonts/LexendMega-Regular.ttf)
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Orbitron;">Orbitron</p>
+        <p>
+            @font-face{
+            font-family: Orbitron;
+            src:url(../fonts/Orbitron-VariableFont_wght.ttf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Saira;">Saira</p>
+        <p>
+            @font-face{
+            font-family: Saira;
+            src:url(../fonts/SairaCondensed-Regular.ttf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Titan;">Titan</p>
+        <p>
+            @font-face {
+            font-family: Titan;
+            src: url(../fonts/Titan.otf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Avengers;">Avengers</p>
+        <p>
+            @font-face {
+            font-family: Avengers;
+            src: url(../fonts/AVENGEANCE\ HEROIC\ AVENGER.otf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: NinjaSushi;">Ninja Sushi</p>
+        <p>
+            @font-face {
+            font-family: NinjaSushi;
+            src: url(../fonts/NinjaSushi.ttf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Romanus;">Romanus</p>
+        <p>
+            @font-face {
+            font-family: Romanus;
+            src: url(../fonts/ROMANUS.otf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Nigel;">Nigel</p>
+        <p>
+            @font-face {
+            font-family: Nigel;
+            src: url(../fonts/The\ Nigel\ Font.ttf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Khodijah;">Khodijah</p>
+        <p>
+            @font-face {
+            font-family: Khodijah;
+            src: url(../fonts/Khodijah\ Free.otf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Kujang;">Kujang</p>
+        <p>
+            @font-face {
+            font-family: Kujang;
+            src: url(../fonts/Kujang-Regular.ttf)
+            }
+        </p>
+        <hr>
+        <p class="fontsP" style="font-family: Euskal;">Euskal</p>
+        <p>
+            @font-face {
+            font-family: Euskal;
+            src: url(../fonts/Neo\ Euskal\ Herria.otf)
+            }
+        </p>
+        <div>
+            <h4>Wingdings</h4>
+            <table class="wingdings">
+                <tr>
+                    <th colspan="26">Fortune</th>
+                </tr>
+                <tr class="wingdingsTr">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="font-family: Fortune;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase; font-family: Fortune;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr>
+                    <td colspan="26">@font-face {font-family: Fortune;src: url(../fonts/The\ Fortune.otf)}
+                    </td>
+                </tr>
+            </table>
+            <table class="wingdings">
+                <tr>
+                    <th colspan="26">History</th>
+                </tr>
+                <tr class="wingdingsTr">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="font-family:History;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase; font-family: History;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr>
+                    <td colspan="26">@font-face {font-family: History;src: url(../fonts/History\ Icons.otf)}
+                    </td>
+                </tr>
+            </table>
+            <table class="wingdings">
+                <tr>
+                    <th colspan="26">Icons</th>
+                </tr>
+                <tr class="wingdingsTr">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="font-family:Icons;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase; font-family: Icons;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr>
+                    <td colspan="26">@font-face {font-family: Icons;src: url(../fonts/font\ icons\ 120.ttf)}
+                    </td>
+                </tr>
+            </table>
+            <table class="wingdingsTr" class="wingdings">
+                <tr>
+                    <th colspan="26">Logos</th>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="font-family:Logos;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase; font-family: Logos;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr>
+                    <td colspan="26"> @font-face {font-family: Logos;src: url(../fonts/ 120\ logos.ttf)}
+                    </td>
+                </tr>
+            </table>
+            <table class="wingdings">
+                <tr>
+                    <th colspan="26">Icons2</th>
+                </tr>
+                <tr class="wingdingsTr">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="font-family:Icons2;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr class="wingdingsTr" style="text-transform: uppercase; font-family: Icons2;">
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                    <td>e</td>
+                    <td>f</td>
+                    <td>g</td>
+                    <td>h</td>
+                    <td>i</td>
+                    <td>j</td>
+                    <td>k</td>
+                    <td>l</td>
+                    <td>m</td>
+                    <td>n</td>
+                    <td>o</td>
+                    <td>p</td>
+                    <td>q</td>
+                    <td>s</td>
+                    <td>t</td>
+                    <td>u</td>
+                    <td>v</td>
+                    <td>w</td>
+                    <td>x</td>
+                    <td>y</td>
+                    <td>z</td>
+                </tr>
+                <tr>
+                    <td colspan="26">@font-face {font-family: Icons2;src: url(../fonts/Icons\ 2019.ttf)}
+                    </td>
+                </tr>
+            </table>
+            <hr>
+        </div>
+    </div>
+    </div>
+
     </div>
     <script src="scripts/scripts.js"></script>
 </body>

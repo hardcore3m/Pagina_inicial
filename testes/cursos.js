@@ -163,6 +163,8 @@ for (let i = 0; i < cursos.length; i++) {
 
     }
 }
+var curso1 = document.getElementById("curso1");
+curso1.innerHTML = materiasAndamento;
 console.log(' ');
 console.log('Teste de Matérias em andamento');
 console.table(materiasAndamento2);

@@ -9,29 +9,29 @@
     <title>Página Inicial</title>
 </head>
 
-<body>
+<body style="background-color: #f0f0f0;">
     <style>
         .flex {
             display: flex;
             flex-flow: row wrap;
             margin: auto;
-            width: 65%;
-        }
-        .tablinks,
-        .tabcontent {
-            height: 320px;
+            width: 90%;
         }
 
         .tabcontent {
-            width: 300px;
+            height: 600px;
+            width: 700px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+
         }
 
         .tablinks {
-            width: 80px;
+            width: 100px;
         }
 
         .tablinks p {
-            transform: rotate(-90deg);
+
             display: table-cell;
             padding-top: 50px;
             padding-right: 10px;
@@ -43,129 +43,220 @@
             padding-left: 15px;
             font-size: 14pt;
         }
+
+        @font-face {
+            font-family: Orbitron;
+            src: url(../fonts/Orbitron-VariableFont_wght.ttf)
+        }
     </style>
-    <iframe src="frames/nav.html" frameborder="0" scrolling="0" style="width: 100%; height:auto;"></iframe>
+    <div class="navbar">
+        <div id="data"></div><br>
+        <a href="https://github.com/" target="_blank"><img src="img/039-github.png" alt="Github"></a>
+        <a href="https://keep.google.com/u/0/#home" target="_blank"><img src="img/icons8-google-keep-240.png" alt="Google Keep"></a>
+        <a href="https://trello.com/hardcore3m/boards" target="_blank"><img src="img/trello-mark-circle.png"
+                alt="Trello"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="img/013-twitter-1.png" alt="Twitter"></a>
+        <a href="https://br.linkedin.com/" target="_blank"><img src="img/031-linkedin.png" alt="linkedin"></a>
+        <a href="https://drive.google.com/drive/my-drive" target="_blank"><img src="img/038-google-drive.png"
+                alt=""></a>
+        <a href="https://instagram.com/" target="_blank"><img src="img/034-instagram.png" alt=""></a>
+        <a href="https://youtube.com/" target="_blank"><img src="img/002-youtube.png" alt=""></a>
+    </div>
 
-    <section>
+    <div class="menu">
+        <img src="img/planejador_pessoal.png" alt="" width="180"><br>
+        <a href="#" style="padding-left: 10px;">Início</a><br>
+        <a href="estudos.html">Estudos</a><br>
+        <a href="docs.html">Documentações</a><br>
+        <a href="templates.html">Templates</a><br>
+        <a href="magick.html">Magick</a><br>
+        <a href="atalhos.html">Atalhos</a><br>
+        <a href="outros.html">Outros</a>
+    </div>
+    <div class="main">
+        <section id="barraAtalhos">
 
-        <div class="corpoDoConteudo">
-            <section id="barraAtalhos">
-
-            </section>
-            <div class="flex">
-
-                <div style="background: #e60003; border-top-left-radius: 10px;border-bottom-left-radius: 10px;"
-                    class="tablinks" onclick="openDocs(event, 'dom')">
-                    <p>Domingo</p>
-                </div>
-                <div style="background: #e6000481;" id="dom" class="tabcontent">
-                    <ul>
-                        <li>Asseio Pessoal</li>
-                        <li>Mentalização</li>
-                        <li>Regar as plantas</li>
-                        <li>Leitura Diária</li>
-                        <li>Tai Chi</li>
-                        <li>Projeto JavaScript</li>
-                        <li>Ligar para amigos</li>
-                        <li>Resumo do dia</li>
-                    </ul>
-                </div>
-                <div style="background: #e68500;" class="tablinks" onclick="openDocs(event, 'seg')">
-                    <p>Segunda</p>
-                </div>
-                <div style="background: #e6860081;" id="seg" class="tabcontent">
-                    <ul>
-                        <li>Asseio Pessoal</li>
-                        <li>Mentalização</li>
-                        <li>Regar as plantas</li>
-                        <li>Mandala Astrológica</li>
-                        <li>Corrida ou Spinning</li>
-                        <li>Digital Innovation One</li>
-                        <li>Arrumar Casa</li>
-                        <li>Projeto .NET</li>
-                        <li>Resumo do dia</li>
-                    </ul>
-                </div>
-                <div style="background: #e6e500;" class="tablinks" onclick="openDocs(event, 'ter')">
-                    <p>Terça</p>
-                </div>
-                <div style="background: #e6e60083;" id="ter" class="tabcontent">
-                    <ul>
-                        <li>Asseio Pessoal</li>
-                        <li>Mentalização</li>
-                        <li>Regar as plantas</li>
-                        <li>Retirar o Lixo</li>
-                        <li>Leitura Diária</li>
-                        <li>Exercícios</li>
-                        <li>Digital Innovatio One</li>
-                        <li>Lavar Banheiro</li>
-                        <li>Estudar .NET</li>
-                        <li>Resumo do dia</li>
-                    </ul>
-                </div>
-                <div style="background: #00e644;" class="tablinks" onclick="openDocs(event, 'qua')">
-                    <p>Quarta</p>
-                </div>
-                <div style="background: #00e64583;" id="qua" class="tabcontent">
-                    <ul>
-                        <li>Asseio Pessoal</li>
-                        <li>Mentalização</li>
-                        <li>Regar as plantas</li>
-                        <li>Leitura Diária</li>
-                        <li>Exercícios</li>
-                        <li>Digital Innovation One</li>
-                        <li>Arrumar terraço e lavar roupas</li>
-                        <li>Praticar node.js</li>
-                        <li>Resumo do dia</li>
-                    </ul>
-                </div>
-                <div style="background: #008ce6;" class="tablinks" onclick="openDocs(event, 'qui')">
-                    <p>Quinta</p>
-                </div>
-                <div style="background: #008ee67c;" id="qui" class="tabcontent">
-                    <ul>
-                        <li>Asseio Pessoal</li>
-                        <li>Mentalização</li>
-                        <li>Regar as plantas</li>
-                        <li>Retirar o Lixo</li>
-                        <li>Leitura Diária</li>
-                        <li>Trabalho</li>
-                        <li>Resumo do dia</li>
-                    </ul>
-                </div>
-                <div style="background: #6600e6;" class="tablinks" onclick="openDocs(event, 'sex')">
-                    <p>Sexta</p>
-                </div>
-                <div style="background: #6800e67e;" id="sex" class="tabcontent">
-                    <ul>
-                        <li>Asseio Pessoal</li>
-                        <li>Mentalização</li>
-                        <li>Regar as plantas</li>
-                        <li>Leitura Diária</li>
-                        <li>Trabalho</li>
-                        <li>Resumo do dia</li>
-                    </ul>
-                </div>
-                <div style="background: #e000e6;border-top-right-radius: 10px;border-bottom-right-radius: 10px;"
-                    class="tablinks" onclick="openDocs(event, 'sab')">
-                    <p>Sábado</p>
-                </div>
-                <div style="background: #de00e652;border-top-right-radius: 10px;border-bottom-right-radius: 10px;"
-                    id="sab" class="tabcontent">
-                    <ul>
-                        <li>Asseio Pessoal</li>
-                        <li>Mentalização</li>
-                        <li>Regar as plantas</li>
-                        <li>Leitura Diária</li>
-                        <li>Trabalho</li>
-                        <li>Resumo do dia</li>
-                    </ul>
-                </div>
-
-
+        </section>
+        <div class="flex">
+            <div style="background: #e60003; border-top-left-radius: 10px;" class="tablinks"
+                onclick="openDocs(event, 'dom')">
+                <p>Domingo</p>
+            </div>
+            <div style="background: #e68500;" class="tablinks" onclick="openDocs(event, 'seg')">
+                <p>Segunda</p>
+            </div>
+            <div style="background: #e6e500;" class="tablinks" onclick="openDocs(event, 'ter')">
+                <p>Terça</p>
+            </div>
+            <div style="background: #00e644;" class="tablinks" onclick="openDocs(event, 'qua')">
+                <p>Quarta</p>
+            </div>
+            <div style="background: #008ce6;" class="tablinks" onclick="openDocs(event, 'qui')">
+                <p>Quinta</p>
+            </div>
+            <div style="background: #6600e6;" class="tablinks" onclick="openDocs(event, 'sex')">
+                <p>Sexta</p>
+            </div>
+            <div style="background: #e000e6;border-top-right-radius: 10px;" class="tablinks"
+                onclick="openDocs(event, 'sab')">
+                <p>Sábado</p>
             </div>
         </div>
-    </section>
+        <div class="flex">
+            <div style="background: #e6000481;" id="dom" class="tabcontent">
+                <ul>
+                    <ul>
+                        <p><b>7:30 - </b> Asseio Pessoal</p>
+                        <hr>
+                        <p><b>8:00 - </b> Mentalização e banimento</p>
+                        <hr>
+                        <p><b>8:30 - </b> Cuidar das plantas e da calopsita</p>
+                        <hr>                    
+                        <p><b>9:00 - </b>Corrida ou Spinning</p>
+                        <hr>
+                        <p><b>10:00 - </b>Digital Innovation One</p>
+                        <hr>
+                        <p><b>14:00 - </b>Arrumar Casa</p>
+                        <hr>
+                        <p><b>15:00 - </b>Mandala Astrológica</p>
+                        <hr>
+                        <p><b>18:00 - </b>Projeto .NET</p>
+                        <hr>
+                        <p> <b>23:00 - </b> Resumo do dia</p>
+                        <hr>
+                    </ul>
+                </ul>
+            </div>
+            <div style="background: #e6860081;" id="seg" class="tabcontent">
+                <ul>
+                    <p><b>7:30 - </b> Asseio Pessoal</p>
+                    <hr>
+                    <p><b>8:00 - </b> Mentalização e banimento</p>
+                    <hr>
+                    <p><b>8:30 - </b> Cuidar das plantas e da calopsita</p>
+                    <hr>                    
+                    <p><b>9:00 - </b>Corrida ou Spinning</p>
+                    <hr>
+                    <p><b>10:00 - </b>Digital Innovation One</p>
+                    <hr>
+                    <p><b>14:00 - </b>Arrumar Casa</p>
+                    <hr>
+                    <p><b>15:00 - </b>Mandala Astrológica</p>
+                    <hr>
+                    <p><b>18:00 - </b>Projeto .NET</p>
+                    <hr>
+                    <p> <b>23:00 - </b> Resumo do dia</p>
+                    <hr>
+                </ul>
+            </div>
+            <div style="background: #e6e60083;" id="ter" class="tabcontent">
+                <ul>
+                    <p><b>7:30 - </b> Asseio Pessoal</p>
+                    <hr>
+                    <p><b>8:00 - </b> Mentalização e banimento</p>
+                    <hr>
+                    <p><b>8:30 - </b> Cuidar das plantas e da calopsita</p>
+                    <hr>                    
+                    <p><b>9:00 - </b>Corrida ou Spinning</p>
+                    <hr>
+                    <p><b>10:00 - </b>Digital Innovation One</p>
+                    <hr>
+                    <p><b>14:00 - </b>Arrumar Casa</p>
+                    <hr>
+                    <p><b>15:00 - </b>Mandala Astrológica</p>
+                    <hr>
+                    <p><b>18:00 - </b>Projeto .NET</p>
+                    <hr>
+                    <p> <b>23:00 - </b> Resumo do dia</p>
+                    <hr>
+                </ul>
+            </div>
+            <div style="background: #00e64583;" id="qua" class="tabcontent">
+                <ul>
+                    <ul>
+                        <p><b>7:30 - </b> Asseio Pessoal</p>
+                        <hr>
+                        <p><b>8:00 - </b> Mentalização e banimento</p>
+                        <hr>
+                        <p><b>8:30 - </b> Cuidar das plantas e da calopsita</p>
+                        <hr>                    
+                        <p><b>9:00 - </b>Corrida ou Spinning</p>
+                        <hr>
+                        <p><b>10:00 - </b>Digital Innovation One</p>
+                        <hr>
+                        <p><b>14:00 - </b>Arrumar Casa</p>
+                        <hr>
+                        <p><b>15:00 - </b>Mandala Astrológica</p>
+                        <hr>
+                        <p><b>18:00 - </b>Projeto .NET</p>
+                        <hr>
+                        <p> <b>23:00 - </b> Resumo do dia</p>
+                        <hr>
+                    </ul>
+                </ul>
+            </div>
+            <div style="background: #008ee67c;" id="qui" class="tabcontent">
+                <ul>
+                    <p><b>7:00 - </b> Asseio Pessoal</p>
+                    <hr>
+                    <p><b>7:30 - </b> Mentalização e banimento</p>
+                    <hr>
+                    <p><b>8:00 - </b> Cuidar das plantas e da calopsita</p>
+                    <hr>
+                    <p><b>8:15 - </b>Retirar o Lixo</p>
+                    <hr>
+                    <p> <b>8:30 - </b> Leitura Diária</p>
+                    <hr>
+                    <p> <b>9:00 - </b> Trabalho</p>
+                    <hr>
+                    <p>   <b>23:00 - </b> Resumo do dia</p>
+                    <hr>
+                </ul>
+            </div>
+            <div style="background: #6800e65b;" id="sex" class="tabcontent">
+                <ul>
+                    <p><b>7:00 - </b> Asseio Pessoal</p>
+                    <hr>
+                    <p><b>7:30 - </b> Mentalização e banimento</p>
+                    <hr>
+                    <p><b>8:00 - </b> Cuidar das plantas e da calopsita</p>
+                    <hr>
+                    <p><b>8:15 - </b>Retirar o Lixo</p>
+                    <hr>
+                    <p> <b>8:30 - </b> Leitura Diária</p>
+                    <hr>
+                    <p> <b>9:00 - </b> Trabalho</p>
+                    <hr>
+                    <p> <b>23:00 - </b> Resumo do dia</p>
+                    <hr>
+                </ul>
+            </div>
+            <div style="background: #de00e652;" id="sab" class="tabcontent">
+                <ul>
+                    <p><b>7:00 - </b> Asseio Pessoal</p>
+                    <hr>
+                    <p><b>7:30 - </b> Mentalização e banimento</p>
+                    <hr>
+                    <p><b>8:00 - </b> Cuidar das plantas e da calopsita</p>
+                    <hr>
+                    <p><b>8:15 - </b>Retirar o Lixo</p>
+                    <hr>
+                    <p> <b>8:30 - </b> Leitura Diária</p>
+                    <hr>
+                    <p> <b>9:00 - </b> Trabalho</p>
+                    <hr>
+                    <p>;;<b>23:00 - </b> Resumo do dia</p>
+                    <hr>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/time.js"></script>
     <script>
