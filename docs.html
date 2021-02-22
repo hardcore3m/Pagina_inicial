@@ -12,14 +12,16 @@
 
 <body>
     <header>
-        <div class="navbar navMain">
+        <div class="navbar navMain fixed-top">
             <a href="#Devdocs"><img src="img/devdocs.png" alt="Devdocs IO"></a>
             <a href="#Ubuntu"><img src="img/cof_orange_hex .jpg" alt="Ubuntu"></a>
             <a href="#Github"><img src="img/039-github.png" alt="Github"></a>
             <a href="#Html"><img src="img/html5.png" alt="Html"></a>
             <a href="#Javascript"><img src="img/javascript.png" alt="Javascript"></a>
             <a href="#Css"><img src="img/css.png" alt=""></a>
+            <a href="#Bootstrap"><img src="img/bootstrap.png" alt=""></a>
             <a href="#Jquery"><img src="img/jQuery.png" alt=""></a>
+            <a href="#Snippets">Snippets</a>
             <a href="#Fonts">Fontes</a>
         </div>
 
@@ -40,6 +42,7 @@
             <h3>Documentações e comandos</h3>
     </center>
     </div>
+    
     <div id="Devdocs" class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="https://devdocs.io/" target="_blank" rel="noopener noreferrer"><img src="img/devdocs.png" alt="">
             Devdocs IO</a>
@@ -48,8 +51,9 @@
         <p>Plataforma de documentações, possui inúmeras verões das documentações mais utilizadas.</p>
 
     </div>
-
-    <div id="Ubuntu" class="navbar navbar-expand flex-column flex-md-row faixa">
+    
+    <div class="espacamento" id="Ubuntu"></div>
+    <div class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="https://help.ubuntu.com/lts/ubuntu-help/index.html" target="_blank" rel="noopener noreferrer"><img
                 src="img/cof_orange_hex .jpg" alt="">
             Ubuntu</a>
@@ -228,19 +232,25 @@
         </table>
 
     </div>
-    <div id="Github" class="navbar navbar-expand flex-column flex-md-row faixa">
+
+    <div class="espacamento" id="Github"></div>
+    <div class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="https://docs.github.com/pt" target="_blank" rel="noopener noreferrer"><img src="img/039-github.png"
                 alt="">
             Github</a>
     </div>
     <div class="container">
         <h4>Github</h4>
-        <a style="color: black;" href="https://gist.github.com/leocomelli/2545add34e4fec21ec16" target="_blank">Lista de
+        <a class="list-group-item list-group-item-action" href="https://gist.github.com/leocomelli/2545add34e4fec21ec16"
+            target="_blank">Lista de
             comandos I</a><br>
-        <a style="color: black;" href="https://woliveiras.com.br/posts/comandos-mais-utilizados-no-git/"
-            target="_blank">Lista de comandos II</a>
+        <a class="list-group-item list-group-item-action"
+            href="https://woliveiras.com.br/posts/comandos-mais-utilizados-no-git/" target="_blank">Lista de comandos
+            II</a>
     </div>
-    <div id="Html" class="navbar navbar-expand flex-column flex-md-row faixa">
+
+    <div class="espacamento" id="Html"></div>
+    <div class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer"><img
                 src="img/html5.png" alt="">
             Html 5</a>
@@ -330,7 +340,8 @@
         </table>
     </div>
 
-    <div id="Javascript" class="navbar navbar-expand flex-column flex-md-row faixa">
+    <div class="espacamento" id="Javascript"></div>
+    <div class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener noreferrer"><img
                 src="img/javascript.png" alt="">
             JavaScript</a>
@@ -339,6 +350,7 @@
         <h4>Javascript</h4>
     </div>
 
+    <div class="espacamento" id="Css"></div>
     <div id="Css" class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener noreferrer"><img
                 src="img/css.png" alt="">
@@ -346,18 +358,70 @@
     </div>
     <div class="container">
         <h4>Css 3</h4>
-
     </div>
 
-    <div id="Jquery" class="navbar navbar-expand flex-column flex-md-row faixa">
+    <div class="espacamento" id="Bootstrap"></div>
+    <div class="navbar navbar-expand flex-column flex-md-row faixa">
+        <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank"
+            rel="noopener noreferrer"><img src="img/bootstrap.png" alt="">
+            Bootstrap 5</a>
+    </div>
+    <div class="container">
+        <h4>Bootstrap 5</h4>
+        <div class="list-group">
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/accordion/">Accordion
+                vertical</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/buttons/">botões</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/button-group/">Grupo de
+                Botões</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/carousel/">Carrosel</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/collapse/">Collapse</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/dropdowns/">Dropdowns</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/navs-tabs/">Navs e Tabelas</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/navbar/">NavBar</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/tooltips/">Tooltip</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/components/toasts/">Toast</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/helpers/position/">Position</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/helpers/colored-links/">Links Coloridos</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/utilities/colors/">Cores</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/utilities/display/">Display</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/utilities/interactions/">Interações</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/utilities/position/">Position</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/utilities/vertical-align/">Alinhamento Vertical</a><br>
+            <a style="color: black;" class="list-group-item list-group-item-action"
+                href="https://getbootstrap.com/docs/5.0/utilities/text/">Texto</a><br>
+
+        </div>
+    </div>
+
+    <div class="espacamento" id="Jquery"></div>
+    <div class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="https://api.jquery.com/" target="_blank" rel="noopener noreferrer"><img src="img/jQuery.png" alt="">
             Jquery</a>
     </div>
     <div class="container">
         <h4>Jquery</h4>
-
     </div>
-    <div id="Snippets" class="navbar navbar-expand flex-column flex-md-row faixa">
+
+    <div class="espacamento" id="Snippets"></div>
+    <div class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="#Snippets" target="" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Snippets do VSCode</a>
     </div>
@@ -497,8 +561,20 @@
                     <td>classList.toggle</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>gi</td>
+                    <td>getElementById</td>
+                </tr>
+                <tr>
+                    <td>gc</td>
+                    <td>getElementsByClassName</td>
+                </tr>
+                <tr>
+                    <td>ih</td>
+                    <td>innerHTML</td>
+                </tr>
+                <tr>
+                    <td>qs</td>
+                    <td>querySelector</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -508,11 +584,11 @@
         </table>
     </div>
 
-
-    <div id="Fontes" class="navbar navbar-expand flex-column flex-md-row faixa">
+    <div class="espacamento" id="Fonts"></div>
+    <div class="navbar navbar-expand flex-column flex-md-row faixa">
         <a href="#Fontes" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fontes</a>
     </div>
-    <div id="Fonts" class="container">
+    <div class="container">
         <h4>Fontes</h4>
         <p class="fontsP" style="font-family: Cinzel;">Cinzel</p>
         <p>
@@ -618,7 +694,7 @@
         </p>
         <div>
             <h4>Wingdings</h4>
-            <table class="wingdings">
+            <table class="wingdings table">
                 <tr>
                     <th colspan="26">Fortune</th>
                 </tr>
@@ -735,7 +811,7 @@
                     </td>
                 </tr>
             </table>
-            <table class="wingdings">
+            <table class="wingdings table">
                 <tr>
                     <th colspan="26">History</th>
                 </tr>
@@ -852,7 +928,7 @@
                     </td>
                 </tr>
             </table>
-            <table class="wingdings">
+            <table class="wingdings table">
                 <tr>
                     <th colspan="26">Icons</th>
                 </tr>
@@ -969,7 +1045,7 @@
                     </td>
                 </tr>
             </table>
-            <table class="wingdingsTr" class="wingdings">
+            <table class="wingdingsTr table">
                 <tr>
                     <th colspan="26">Logos</th>
                 </tr>
@@ -1086,7 +1162,7 @@
                     </td>
                 </tr>
             </table>
-            <table class="wingdings">
+            <table class="wingdings table">
                 <tr>
                     <th colspan="26">Icons2</th>
                 </tr>
