@@ -1,11 +1,12 @@
-# Nome do projeto
+# Criando uma página inicial
 
-Descrição do projeto
+Criação de uma página inicial para centralizar algumas informações que utilizo frequentemente e praticar javascript.
+A página conta com uma contagem regressiva acessada por um array, um header que modifica a saudação e o plano de fundo de acordo com o período do dia e algumas funções em Jquery
 
 ## Linguagens, Bibliotecas e Frameworks
-
+Html, Css, Javascript, Jquery
 ## Origem
-
+Pŕopria
 ## Minhas redes sociais
 
 [GitHub](https://github.com/hardcore3m)  
@@ -23,5 +24,4 @@ Seja você iniciante, médio ou avançado, a DIO provavelmente tem um conteúdo 
 [Conheça a Digital Innovation One](https://digitalinnovation.one/sign-up?ref=YJWOMJ77OW)
 
 ### CFB Cursos
-O canal do Professor Bruno é excelente para quem deseja aprender passo a passo cada etapa do desenvolvimento de uma linguagem ou biblioteca. 
-
+O canal do Professor Bruno é excelente para quem deseja aprender passo a passo cada etapa do desenvolvimento de uma linguagem ou biblioteca.
